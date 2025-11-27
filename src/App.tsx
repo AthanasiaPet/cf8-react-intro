@@ -8,6 +8,8 @@
 
 
 import LayOut from "./components/LayOut.tsx";
+// import FunctionalComponentWithState from "./components/FunctionalComponentWithState.tsx";
+import ClassComponentWithState from "./components/ClassComponentWithState.tsx";
 
 function App() {
 
@@ -29,7 +31,8 @@ function App() {
             {/*</Card>*/}
 
             <LayOut>
-                jm
+                {/*<FunctionalComponentWithState />*/}
+                <ClassComponentWithState />
             </LayOut>
 
         </>
