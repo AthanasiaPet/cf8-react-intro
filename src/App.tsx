@@ -38,6 +38,7 @@ function App() {
                 {/*<ClassComponentWithState />*/}
                 {/*<Counter />*/}
                 {/*<NameChanger />*/}
+                {/*<CounterWithMoreStates />*/}
                 <CounterWithMoreStates />
             </LayOut>
 
