@@ -10,7 +10,8 @@
 import LayOut from "./components/LayOut.tsx";
 // import FunctionalComponentWithState from "./components/FunctionalComponentWithState.tsx";
 //import ClassComponentWithState from "./components/ClassComponentWithState.tsx";
-import Counter from "./components/Counter.tsx";
+//import Counter from "./components/Counter.tsx";
+import NameChanger from "./components/NameChanger.tsx";
 
 function App() {
 
@@ -34,7 +35,8 @@ function App() {
             <LayOut>
                 {/*<FunctionalComponentWithState />*/}
                 {/*<ClassComponentWithState />*/}
-                <Counter />
+                {/*<Counter />*/}
+                <NameChanger />
             </LayOut>
 
         </>
