@@ -8,11 +8,12 @@
 
 
 import LayOut from "./components/LayOut.tsx";
+import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
 // import FunctionalComponentWithState from "./components/FunctionalComponentWithState.tsx";
 //import ClassComponentWithState from "./components/ClassComponentWithState.tsx";
 //import Counter from "./components/Counter.tsx";
 //import NameChanger from "./components/NameChanger.tsx";
-import CounterWithMoreStates from "./components/CounterWithMoreStates.tsx";
+//import CounterWithMoreStates from "./components/CounterWithMoreStates.tsx";
 
 function App() {
 
@@ -39,7 +40,8 @@ function App() {
                 {/*<Counter />*/}
                 {/*<NameChanger />*/}
                 {/*<CounterWithMoreStates />*/}
-                <CounterWithMoreStates />
+                {/*<CounterWithMoreStates />*/}
+                <CounterWithCustomHook />
             </LayOut>
 
         </>
