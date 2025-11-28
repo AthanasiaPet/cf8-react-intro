@@ -8,7 +8,9 @@
 
 
 import LayOut from "./components/LayOut.tsx";
-import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
+//import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
+import NameChangerWithEffect from "./components/NameChangerWithEffect.tsx";
+// import {useEffect} from "react";
 // import FunctionalComponentWithState from "./components/FunctionalComponentWithState.tsx";
 //import ClassComponentWithState from "./components/ClassComponentWithState.tsx";
 //import Counter from "./components/Counter.tsx";
@@ -16,6 +18,11 @@ import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
 //import CounterWithMoreStates from "./components/CounterWithMoreStates.tsx";
 
 function App() {
+    //
+    // useEffect(() => {
+    //
+    //
+    // }, []);
 
 
     return (
@@ -41,7 +48,8 @@ function App() {
                 {/*<NameChanger />*/}
                 {/*<CounterWithMoreStates />*/}
                 {/*<CounterWithMoreStates />*/}
-                <CounterWithCustomHook />
+                {/*<CounterWithCustomHook />*/}
+                <NameChangerWithEffect />
             </LayOut>
 
         </>
