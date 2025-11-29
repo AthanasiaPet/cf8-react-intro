@@ -8,8 +8,12 @@
 
 
 import LayOut from "./components/LayOut.tsx";
+//import Timer from "./components/Timer.tsx";
+//import WindowSize from "./components/WindowSize.tsx";
+import Timer from "./components/Timer.tsx";
 //import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
-import NameChangerWithEffect from "./components/NameChangerWithEffect.tsx";
+//import NameChangerWithEffect from "./components/NameChangerWithEffect.tsx";
+//import {useEffect} from "react";
 // import {useEffect} from "react";
 // import FunctionalComponentWithState from "./components/FunctionalComponentWithState.tsx";
 //import ClassComponentWithState from "./components/ClassComponentWithState.tsx";
@@ -18,10 +22,18 @@ import NameChangerWithEffect from "./components/NameChangerWithEffect.tsx";
 //import CounterWithMoreStates from "./components/CounterWithMoreStates.tsx";
 
 function App() {
+
+    // useEffect(() => {
+    //     const id: number = setInterval(() => console.log("tick"), 1000)
+    //     return() => clearInterval(id);
+    // }, []);
     //
     // useEffect(() => {
-    //
-    //
+    //     let counter: number = 1;
+    //     const id: number = setInterval(() => {
+    //         console.log(counter++);
+    //     }, 1000);
+    //     return () => clearInterval(id);
     // }, []);
 
 
@@ -49,7 +61,12 @@ function App() {
                 {/*<CounterWithMoreStates />*/}
                 {/*<CounterWithMoreStates />*/}
                 {/*<CounterWithCustomHook />*/}
-                <NameChangerWithEffect />
+                {/*<NameChangerWithEffect />*/}
+               <Timer />
+
+                {/*<WindowSize />*/}
+
+
             </LayOut>
 
         </>
