@@ -9,8 +9,8 @@
 
 import LayOut from "./components/LayOut.tsx";
 //import Timer from "./components/Timer.tsx";
-//import WindowSize from "./components/WindowSize.tsx";
-import Timer from "./components/Timer.tsx";
+import WindowSize from "./components/WindowSize.tsx";
+//import Timer from "./components/Timer.tsx";
 //import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
 //import NameChangerWithEffect from "./components/NameChangerWithEffect.tsx";
 //import {useEffect} from "react";
@@ -62,9 +62,9 @@ function App() {
                 {/*<CounterWithMoreStates />*/}
                 {/*<CounterWithCustomHook />*/}
                 {/*<NameChangerWithEffect />*/}
-               <Timer />
+               {/*<Timer />*/}
 
-                {/*<WindowSize />*/}
+                <WindowSize />
 
 
             </LayOut>
