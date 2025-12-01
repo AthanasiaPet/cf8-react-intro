@@ -10,7 +10,8 @@
 import LayOut from "./components/LayOut.tsx";
 //import Timer from "./components/Timer.tsx";
 //import WindowSize from "./components/WindowSize.tsx";
-import FocusInput from "./components/FocusInput.tsx";
+//import FocusInput from "./components/FocusInput.tsx";
+import PreviousValue from "./components/PreviousValue.tsx";
 //import Timer from "./components/Timer.tsx";
 //import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
 //import NameChangerWithEffect from "./components/NameChangerWithEffect.tsx";
@@ -66,7 +67,9 @@ function App() {
                {/*<Timer />*/}
 
                 {/*<WindowSize />*/}
-                <FocusInput />
+                {/*<FocusInput />*/}
+
+                <PreviousValue />
 
 
             </LayOut>
