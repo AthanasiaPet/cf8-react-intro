@@ -7,8 +7,9 @@
 // import Card from "./components/Card.tsx";
 
 
-import LayOut from "./components/LayOut.tsx";
-import CounterWithRef from "./components/CounterWithRef.tsx";
+// import LayOut from "./components/LayOut.tsx";
+// import CounterWithRef from "./components/CounterWithRef.tsx";
+// import {useEffect} from "react";
 //import Timer from "./components/Timer.tsx";
 //import WindowSize from "./components/WindowSize.tsx";
 //import FocusInput from "./components/FocusInput.tsx";
@@ -24,6 +25,11 @@ import CounterWithRef from "./components/CounterWithRef.tsx";
 //import NameChanger from "./components/NameChanger.tsx";
 //import CounterWithMoreStates from "./components/CounterWithMoreStates.tsx";
 
+import {BrowserRouter, Route, Routes} from "react-router";
+import NameChanger from "./components/NameChanger.tsx";
+import HomePage from "./pages/HomePage.tsx";
+import Timer from "./components/Timer.tsx";
+
 function App() {
 
     // useEffect(() => {
@@ -38,6 +44,15 @@ function App() {
     //     }, 1000);
     //     return () => clearInterval(id);
     // }, []);
+
+    // useEffect(() => {
+    //     history.pushState({page: 1}, "", "/page")
+    //     history.replaceState({page: 1}, "", "/page1");
+    //
+    //     window.onpopstate = (e) => {
+    //         console.log(e.state);
+    //     }
+    // });
 
 
     return (
@@ -56,7 +71,7 @@ function App() {
             {/*                                           description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit."}/>*/}
             {/*</Card>*/}
 
-            <LayOut>
+            {/*<LayOut>*/}
                 {/*<FunctionalComponentWithState />*/}
                 {/*<ClassComponentWithState />*/}
                 {/*<Counter />*/}
@@ -72,10 +87,22 @@ function App() {
 
                 {/*<PreviousValue />*/}
 
-                <CounterWithRef />
+            {/*    <CounterWithRef />*/}
 
 
-            </LayOut>
+            {/*</LayOut>*/}
+
+            <BrowserRouter>
+                <Routes>
+                    <Route index element = {<HomePage />} />
+                    <Route path="name-changer" element={<NameChanger />} />
+                    <Route path="timer" element={<Timer />} />
+
+                </Routes>
+
+
+            </BrowserRouter>
+
 
         </>
     )
