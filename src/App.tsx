@@ -29,6 +29,7 @@ import {BrowserRouter, Route, Routes} from "react-router";
 import NameChanger from "./components/NameChanger.tsx";
 import HomePage from "./pages/HomePage.tsx";
 import Timer from "./components/Timer.tsx";
+import RouterLayout from "./components/RouterLayout.tsx";
 
 function App() {
 
@@ -94,9 +95,32 @@ function App() {
 
             <BrowserRouter>
                 <Routes>
-                    <Route index element = {<HomePage />} />
-                    <Route path="name-changer" element={<NameChanger />} />
-                    <Route path="timer" element={<Timer />} />
+
+                    {/*<Route path="name-changer" element={<NameChanger />} />*/}
+                    {/*<Route path="timer" element={<Timer />} />*/}
+
+                    <Route element={<RouterLayout />} />
+                         <Route index element = {<HomePage />} />
+                {/*    Nested Routes */}
+                    <Route path="examples?">
+                        <Route path="name-changer" element={<NameChanger />} />
+                        <Route path="timer" element={<Timer />} />
+                    </Route>
+
+
+                {/*    Dynamic Segments*/}
+                {/*    <Route path="users/:userId" element={<UserPage />} />*/}
+
+                {/*    <Route path="users">*/}
+                {/*        <Route path=":userId">*/}
+                {/*            <Route index element={<UserPage/>} />*/}
+                {/*            <Route path="accounts" element={<UserAccountPage />} />*/}
+                {/*        </Route>*/}
+                {/*    </Route>*/}
+
+                {/*/!*    Catch all files from file page*!/*/}
+                {/*/!*    <Route path="files/*" element={<FilePage />} />*!/*/}
+
 
                 </Routes>
 
